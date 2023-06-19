@@ -1,0 +1,15 @@
+@media (max-width: 480px) {
+  h1 {
+    padding-top: 10px;
+    font-size: 36px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  h1 {
+    padding-top: 10px;
+    font-size: 70px;
+    text-align: center;
+  }
+}
