@@ -1,0 +1,19 @@
+@media (max-width: 480px) {
+  p.main {
+    background-color: #F8F9FA;
+    color: black;
+    padding: 15px;
+    font-size: 6pt;
+    font-style:italic;
+  }
+}
+
+@media (min-width: 481px) {
+  p.main {
+  background-color: #F8F9FA;
+  color: black;
+  padding: 15px;
+  font-size: 8pt;
+  font-style:italic;
+  }
+}
