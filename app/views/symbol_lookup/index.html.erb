@@ -1,0 +1,17 @@
+<div class="container search">
+  <div class="row justify-content-center">
+    <div class="col-lg-6" style="padding: 10px;">
+      <div class="d-flex flex-column align-items-center justify-content-center">
+        <p class="text-center">Search for a company by name</p>
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <%= form_with url: symbol_lookup_results_path, method: :get, local: true, html: { class: 'form-inline' } do |f| %>
+            <div class="form-group mb-2 d-flex">
+              <%= f.text_field :search, class: 'form-control mr-2', placeholder: 'Company' %>
+              <%= f.submit 'Search', class: 'btn btn-primary mb-2', name: nil %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

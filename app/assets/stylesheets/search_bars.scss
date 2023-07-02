@@ -1,0 +1,11 @@
+.container.search {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+}
+
+.container.search p {
+  white-space: nowrap; /* Prevent text from wrapping */
+}
