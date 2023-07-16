@@ -6,7 +6,6 @@ class SymbolsController < ApplicationController
     if params[:company].present?
       company = params[:company]
       @symbols = SymbolFacade.get_symbol(company)
-      require 'pry'; binding.pry 
     end
   end
 end
