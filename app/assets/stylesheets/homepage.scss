@@ -13,3 +13,18 @@
     padding: 10px;
   }
 }
+
+#ticker-content {
+  border: 1px solid #535151;
+  padding: 10px;
+}
+
+/* Add CSS style for negative change */
+.negative-change {
+  color: red;
+}
+
+/* Add CSS style for positive change */
+.positive-change {
+  color: green;
+}

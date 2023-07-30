@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head></head>
-<body data-ticker-data="<%= @ticker_data %>">
+<body>
 
 <div class="container-fluid text-center">    
   <div class="row content d-flex justify-content-center">
@@ -19,8 +19,9 @@
       <p>We aggregate data from multiple sources and have <b><u>zero holdings</u></b>  in the investment options we share with you.</p>
       <hr>
       <h3>Largest Stocks</h3>
+      <div id="ticker-data" data-ticker-data="<%= @ticker_data %>"></div>
       <%= javascript_include_tag 'ticker' %>
-      <div id="companyAttributesContainer">
+      <div id="ticker-content"></div>
       <br>
       <br>
     </div>

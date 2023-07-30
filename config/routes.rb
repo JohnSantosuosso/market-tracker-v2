@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root 'welcome#index'
+  get '/refresh_ticker_data', to: 'welcome#refresh_ticker_data'
 
   get "/search", to: 'search#index'
 
