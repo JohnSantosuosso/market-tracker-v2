@@ -2,7 +2,7 @@ class TickerCompany
     attr_reader :symbol, :name, :price, :change
     def initialize(company)
         @symbol = company[:symbol]
-        @name = company[:displayName]
+        @name = company[:shortName]
         @price = company[:regularMarketPrice]
         @change = company[:regularMarketChangePercent]
     end

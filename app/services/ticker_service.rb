@@ -1,7 +1,7 @@
 class TickerService
     class << self
       def call_ticker
-        response = connection.get("/v6/finance/quote?region=US&lang=en&symbols=AAPL,MSFT,AMZN,NVDA,TSLA")
+        response = connection.get("/v6/finance/quote?region=US&lang=en&symbols=AAPL,MSFT,GOOGL,AMZN,NVDA")
         parse_data(response)
       end
   

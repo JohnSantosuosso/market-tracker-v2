@@ -3,8 +3,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head></head>
-<body data-ticker-data="<%= escape_javascript(@ticker_data) %>">
-  
+<body data-ticker-data="<%= @ticker_data %>">
+
 <div class="container-fluid text-center">    
   <div class="row content d-flex justify-content-center">
   <%=image_tag("welcome/market.jpg", :class => "market-data-responsive", :class => "market-data-responsive")%>
@@ -14,10 +14,13 @@
       <p>We provide the latest financial market data, including financial information for all companies listed on the New York Stock Exchange and NASDAQ. </p>
       <p>We help you to make informed investing choices, including recommendations on the hottest daily and weekly stocks. </p>
       <hr>
-      <%= javascript_include_tag 'ticker' %>
       <h3>Why Us?</h3>
       <p>Our financial experts and data collection models provide you with the power to choose investments that fit your financial needs.</p>
       <p>We aggregate data from multiple sources and have <b><u>zero holdings</u></b>  in the investment options we share with you.</p>
+      <hr>
+      <h3>Largest Stocks</h3>
+      <%= javascript_include_tag 'ticker' %>
+      <div id="companyAttributesContainer">
       <br>
       <br>
     </div>
