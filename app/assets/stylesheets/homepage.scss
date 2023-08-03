@@ -15,16 +15,17 @@
 }
 
 #ticker-content {
-  border: 1px solid #535151;
-  padding: 10px;
-}
+  p {
+    color: #000000;
+    font-family: 'Courier New';
+    font-size: 20px;
+  }
 
-/* Add CSS style for negative change */
-.negative-change {
-  color: red;
-}
+  p.negative-change {
+    color: red;
+  }
 
-/* Add CSS style for positive change */
-.positive-change {
-  color: green;
+  p.positive-change {
+    color: green;
+  }
 }
