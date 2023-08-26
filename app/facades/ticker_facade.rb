@@ -1,8 +1,8 @@
 class TickerFacade
     class << self
       def get_ticker
-        data = TickerService.call_ticker[:quoteResponse][:result]
-        data.map { |company| TickerCompany.new(company) } 
+        result = TickerService.call[:quoteResponse][:result]
+        result.map { |company| TickerCompany.new(company) } 
       end
     end
   end

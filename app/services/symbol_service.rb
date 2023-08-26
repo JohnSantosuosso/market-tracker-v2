@@ -1,6 +1,6 @@
 class SymbolService
   class << self
-    def call_symbol(company)
+    def call(company)
       response = connection.get("/v6/finance/autocomplete?lang=en&query=#{company}")
       parse_data(response)
     end
